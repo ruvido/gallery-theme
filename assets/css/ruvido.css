@@ -1,0 +1,130 @@
+.craftedby {
+    display: block;
+    width: 100%;
+    float: center;
+    text-align: center;
+}
+
+.red{
+    color: #F57F73;
+}
+
+.bio{
+/*    padding: 0.5em;*/
+    font-size: 0.9em;
+/*    line-height: 1.6em;*/
+}
+
+
+.card{
+/*    background:#BDC7CC;*/
+    background:#E2EAEE;
+/*    background: #F5F8FA;*/
+/*    border: 2px solid;*/
+    border-radius: 1em;
+    padding: 0.5em;
+    font-size: 0.7em;
+    line-height: 1.6em;
+}
+
+
+.church:before {
+    font-family: FontAwesome;
+    content: "\f004";
+    padding-right:1em;
+}
+
+.date:before {
+    font-family: FontAwesome;
+    content: "\f073";
+    padding-right:1em;
+}
+
+.time:before {
+    font-family: FontAwesome;
+    content: "\f017";
+    padding-right:1em;
+}
+
+.phone:before {
+    font-family: FontAwesome;
+    content: "\f095";
+    padding-right:1em;
+}
+
+.email:before {
+    font-family: FontAwesome;
+    content: "\f003";
+    padding-right:1em;
+}
+
+.address:before {
+    font-family: FontAwesome;
+    content: "\f041";
+    padding-right:1em;
+}
+
+.name {
+    font-weight: bold;
+}
+
+    .dual {
+        text-align: center;
+/*
+        width: 126%;
+        margin-left: -13%;
+        padding:0;
+*/
+    }
+    .dual .full-img {
+        width: 49.0%;
+        display: inline;
+        margin:0;
+        padding:0;
+    }
+
+.post{
+    border-bottom: #EBF2F6 0px solid;
+}
+
+.post:after {
+    display: none;
+}
+
+.triplet {
+width: 100%;
+}
+
+.post-content .triplet img {
+    width: 31%;
+    display: inline;
+    margin:0;
+}
+
+/*--- BIG SCREENS -------( larger than 500px )----------------------------*/
+
+@media (min-width: 500px) {
+    .post-content p {
+    text-align: justify;
+    }
+    .card {
+        font-size: 1em;
+        line-height: 2em; 
+    }
+
+/*
+    .dual {
+        width: 126%;
+        margin-left: -13%;
+        padding:0;
+    }
+    .dual .full-img {
+        width: 49.5%;
+        display: inline;
+        margin:0;
+        padding:0;
+    }
+*/
+
+
+}

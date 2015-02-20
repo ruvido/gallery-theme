@@ -122,11 +122,6 @@ a:hover{
     max-width: 710px;
     margin: 0 auto;
     padding-bottom: 4rem;
-/*
-    width: 100%;
-    margin:0;
-    padding: 4rem 3rem;
-*/
     border: none;
 /*    background: #BBC7CC;*/
 /*    background: #5399D6;*/
@@ -134,13 +129,17 @@ a:hover{
 /*    text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 1);*/
 /*    color:#B6D2EC;*/
 /*    color: #2A2A2A;*/
+    
 }
 
 .post-footer .author h4{
+    padding-top: 1.0rem;
     padding-bottom: 1.5rem;
-    font-size: 2.0rem;
+    font-size: 2.5rem;
 /*    color: #ffffff;*/
 }
+
+
 
 .post-footer .author a:hover {
     color:#5399D6;
@@ -273,8 +272,16 @@ a:hover{
         font-size: 3rem;
         display: inline;
     }
-.email_5p2p{
-    font-size:3rem; text-align:center
-}
+    .email_5p2p{
+        font-size:3rem; 
+        text-align:center
+    }
+    
+    .post-footer .author p {
+        font-size:1.6rem;
+    }
 
+    .post-footer .author .social_links {
+        font-size: 1.6rem;
+    }
 }

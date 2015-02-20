@@ -1,3 +1,175 @@
+/*--------------------------------
+----------- TOC ------------------
+|
+| 1.  Images
+| 2.  Elements
+| 3.  
+| 4.  
+| 5.  Extras
+| 5.1 Icons
+|
+--------------------------------*/
+html, body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/*
+*********************************
+*****   IMAGES   ****************
+*********************************
+*/
+
+.post-content img {
+    padding: 0.5%;
+}
+
+.b-lazy {
+        -webkit-transition: opacity 500ms ease-in-out;
+           -moz-transition: opacity 500ms ease-in-out;
+             -o-transition: opacity 500ms ease-in-out;
+                transition: opacity 500ms ease-in-out;
+                 max-width: 100%;
+                   opacity: 0;
+}
+.b-lazy.b-loaded {
+    opacity: 1;
+}
+
+
+  .dual {
+        text-align: center;
+/*
+        width: 126%;
+        margin-left: -13%;
+        padding:0;
+*/
+    }
+    .dual .full-img {
+        width: 49.0%;
+        display: inline;
+        margin:0;
+        padding:0;
+    }
+
+.triplet {
+width: 100%;
+}
+
+.post-content .triplet img {
+    width: 31%;
+    display: inline;
+    margin:0;
+}
+
+/*
+*********************************
+*****   ELEMENTS   **************
+*********************************
+*/
+
+a:hover{
+    color:#5399D6;
+
+}
+.main-nav {
+    padding: 0;
+    margin-bottom: 2rem;
+    border-bottom: 0px;
+}
+
+.main-nav .share {
+    float: right;
+    padding-right: 1rem;
+}
+.main-nav .share h4{
+    display: none;
+}
+
+.main-nav .share a {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 0.8rem 1rem 1.6rem 0;
+    color: #BBC7CC;
+    text-decoration: none;
+}
+
+.main-nav .share a:hover {
+    color: #9EABB3;
+}
+
+.post {
+    padding-bottom: 0;
+}
+.site-footer {
+    margin:0;
+}
+.post-footer {
+    padding: 5rem 0 0 0;
+    text-align: center;
+}
+
+.post-footer .share {
+    margin:0;
+    position: static;
+    width: auto;
+}
+
+
+.post-footer .author{
+    box-sizing: border-box;
+    text-align: left;
+    width: 80%;
+    max-width: 710px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+/*
+    width: 100%;
+    margin:0;
+    padding: 4rem 3rem;
+*/
+    border: none;
+/*    background: #BBC7CC;*/
+/*    background: #5399D6;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 1);*/
+/*    color:#B6D2EC;*/
+/*    color: #2A2A2A;*/
+}
+
+.post-footer .author h4{
+    padding-bottom: 1.5rem;
+    font-size: 2.0rem;
+/*    color: #ffffff;*/
+}
+
+.post-footer .author a:hover {
+    color:#5399D6;
+    border-bottom: #5399D6 1px dashed;
+}
+
+.post-footer .author a {
+    text-transform: uppercase;
+    color: #2A2A2A;
+    text-decoration: none;
+    border-bottom: #2A2A2A 1px dashed;
+}
+
+.post-footer .author .social_links {
+    font-size: 1.3rem;
+/*    text-align: center;*/
+}
+
+/*
+*********************************
+*****   EXTRAs   ****************
+*********************************
+*/
+
+.email_5p2p{
+    font-size: 2rem;
+    text-align: center;
+}
+
 .craftedby {
     display: block;
     width: 100%;
@@ -22,7 +194,7 @@
 /*    background: #F5F8FA;*/
 /*    border: 2px solid;*/
     border-radius: 1em;
-    padding: 0.5em;
+    padding: 4rem 4rem;
     font-size: 0.7em;
     line-height: 1.6em;
 }
@@ -68,21 +240,7 @@
     font-weight: bold;
 }
 
-    .dual {
-        text-align: center;
-/*
-        width: 126%;
-        margin-left: -13%;
-        padding:0;
-*/
-    }
-    .dual .full-img {
-        width: 49.0%;
-        display: inline;
-        margin:0;
-        padding:0;
-    }
-
+  
 .post{
     border-bottom: #EBF2F6 0px solid;
 }
@@ -91,15 +249,7 @@
     display: none;
 }
 
-.triplet {
-width: 100%;
-}
 
-.post-content .triplet img {
-    width: 31%;
-    display: inline;
-    margin:0;
-}
 
 /*--- BIG SCREENS -------( larger than 500px )----------------------------*/
 
@@ -107,24 +257,24 @@ width: 100%;
     .post-content p {
     text-align: justify;
     }
-    .card {
-        font-size: 1em;
-        line-height: 2em; 
+    .main-nav {
+        position: relative;
+        padding: 35px 40px;
+        margin: 0 0 30px 0;
+    }
+    
+    .post-footer .share a {
+        font-size: 4rem;
+        padding: 0 1rem;
+        margin:0
     }
 
-/*
-    .dual {
-        width: 126%;
-        margin-left: -13%;
-        padding:0;
-    }
-    .dual .full-img {
-        width: 49.5%;
+    .post-footer .share h4 {
+        font-size: 3rem;
         display: inline;
-        margin:0;
-        padding:0;
     }
-*/
-
+.email_5p2p{
+    font-size:3rem; text-align:center
+}
 
 }

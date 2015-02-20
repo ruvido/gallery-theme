@@ -17,7 +17,8 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/ruvido.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Montserrat:400,700" />
 
     {{! ruvidos }}
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -46,5 +47,29 @@
     {{! MARKDOWN add-ons}}
     <script type="text/javascript" src="{{asset "js/markdown.js"}}"></script>
 
+    {{! blazy image loader}}
+    <script src="{{asset "js/blazy.min.js"}}"></script>
+	<script>
+	/*BE LAZY*/
+	;(function() {
+		if('ontouchstart' in document.documentElement) {
+			document.querySelector('.js-ex').setAttribute('style', 'overflow-x: scroll;');
+			document.querySelector('.html-ex').setAttribute('style', 'overflow-x: scroll;');
+		}
+		var bLazy = new Blazy({ 
+			breakpoints: [{
+					width: 420, // max-width
+					src: 'data-src-small'
+				}]
+		  , success: function(element){
+				setTimeout(function(){
+					var parent = element.parentNode;
+					parent.className = parent.className.replace(/\bloading\b/,'');
+				}, 200);
+			}
+		});
+	})();
+	</script>
+    
 </body>
 </html>

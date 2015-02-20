@@ -7,10 +7,22 @@
 {{#post}}
 
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <!-- nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-    </nav --> 
+        <!--a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a-->
+        <section class="share">
+                <h4>Seguici su</h4>
+                <a class="icon-twitter" href="https://twitter.com/5pani2pesci">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/5pani2pesci">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-feed" href="http://5p2p.it">
+                    <span class="hidden">Blog</span>
+                </a>
+            </section>
+    </nav> 
 </header>
 
 <main class="content" role="main">
@@ -19,19 +31,21 @@
 
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
-            <!-- section class="post-meta">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
-            </section -->
+            <section class="post-meta">
+                <section class="post-date">{{tags}}</section>
+<!--                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{tags}} {{date format="DD MMMM YYYY"}} -->
+        
+    </nav> 
+            </section>
         </header>
 
         <section class="post-content">
+                        
             {{content}}
         </section>
+ </article>
 
         <footer class="post-footer">
-
-        {{! Everything inside the #author tags pulls data from the author }}
-        {{#author}}
 
             
             <figure class="author-image">
@@ -41,30 +55,22 @@
 
             <section class="author">
                 
-                {{> bio_5p2p}}
-                
-                <!--
-                <h4><a href="{{url}}">{{name}}</a></h4>
+                <h4>Già conosci 5pani2pesci?</h4>
 
-                {{#if bio}}
-                    <p>{{bio}}</p>
-                {{else}}
-                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                {{/if}}
-                <div class="author-meta">
-                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                </div>
-                -->
+                    <p>Belle le foto del matrimonio di {{title}}?</p>
+                    <p>Sono state realizzate da <a href="http://5p2p.it">5pani2pesci</a>, un progetto di evangelizzazione  per scoprire l'amore vero, quello che ti cambia la vita. Tutto il ricavato ottenuto dai servizi fotografici è finalizzato per questa attività.</p>
+
+                    <p>Vienici a conoscere!</p>
+                    <section class="social_links">
+                    <a href="">Blog</a> ·
+                    <a href="">Facebook</a> ·
+                    <a href="">Twitter</a> ·
+                    <a href="">Youtube</a>
+                    </section>
             </section>
-
-        {{/author}}
-
-            {{> seguici }}
 
         </footer>
 
-    </article>
 
 </main>
 

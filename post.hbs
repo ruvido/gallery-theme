@@ -6,8 +6,9 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+<!--<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">-->
+<header class="main-header post-head no-cover">
+    <nav class="main-nav clearfix">
         <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
         <!--a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a-->
         <section class="share">
@@ -32,7 +33,7 @@
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
             <section class="post-meta">
-                <section class="post-date">{{tags}}</section>
+                <section class="post-date">{{tags autolink="false"}}</section>
 <!--                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{tags}} {{date format="DD MMMM YYYY"}} -->
         
     </nav> 

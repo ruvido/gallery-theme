@@ -23,6 +23,18 @@ html, body {
     padding: 0.5%;
 }
 
+.lazy-load, .lazy-loaded {
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.lazy-loaded { opacity: 1; }
+
+
 .b-lazy {
         -webkit-transition: opacity 500ms ease-in-out;
            -moz-transition: opacity 500ms ease-in-out;
